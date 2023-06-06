@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar event</title>
+</head>
+<body>
+    <h1> Hitung Mundur Maju : </h1>
+    <button id="maju" onclick="Number('mundur')">Mundur</button>
+    <button id="mundur" onclick="Number('maju')">Maju</button>
+
+    <div id="hasil_hitung">0</div>
+    <div id="hasil_status"></div>
+    
+    <script> 
+        function Number (tipe){
+            var sStatus = "mundur",
+                nilai = 0;
+            var hasil = document.getElementById("hasil_hitung");
+            var status = document.getElementById("hasil_status");
+            if (tipe == "mundur") nilai = parseInt(hasil.innerHTML) -1;
+            else{
+                nilai = parseInt(hasil.innerHTML) +1;
+                sStatus ="maju";
+            }
+            hasil.innerHTML = nilai;
+            status.innerHTML = `Status : ${sStatus}`;
+        }
+    </script>
+</body>
+</html>

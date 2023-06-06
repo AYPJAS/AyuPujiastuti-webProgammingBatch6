@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tugas Mandiri 6</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <p class="paragraf">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+            debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+            maiores in?
+        </p>
+        <p class="paragraf">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+            debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+            maiores in?
+        </p>
+        <p class="paragraf">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+            debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+            maiores in?
+        </p>
+        <p class="paragraf">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+            debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+            maiores in?
+        </p>
+
+        <script>
+        var paragraf = document.getElementsByClassName("paragraf");
+            setInterval(function(){
+                paragraf[0].style.color = "violet";
+                paragraf[1].style.color = "green";
+                paragraf[2].style.color = "blue";
+                paragraf[3].style.color = "pink";
+
+            setTimeout(function(){
+                paragraf[0].style.color = "black";
+                paragraf[1].style.color = "black";
+                paragraf[2].style.color = "black";
+                paragraf[3].style.color = "black";
+
+            },700)
+           },2000);
+        </script>
+    </body>
+</html>
